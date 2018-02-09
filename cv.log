@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2018.2.9)  9 FEB 2018 11:35
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2018.2.9)  9 FEB 2018 11:45
 entering extended mode
 **./cv.tex
 (cv.tex
@@ -1442,25 +1442,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.98067pt on input line 60.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 ^^I\vspace{0.77 in}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (27.00496pt too wide) in paragraph at lines 87--87
+Overfull \hbox (27.00496pt too wide) in paragraph at lines 89--89
  [][]
  []
 
@@ -1471,7 +1453,7 @@ File: img/3stars.png Graphic file (type bmp)
 File: img/3stars.png Graphic file (type bmp)
 <img/3stars.png>
 
-Overfull \hbox (15.41656pt too wide) in paragraph at lines 111--111
+Overfull \hbox (11.5884pt too wide) in paragraph at lines 111--111
  [][]
  []
 
@@ -1507,12 +1489,12 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40300 strings out of 427839
- 782609 string characters out of 3152539
- 1334080 words of memory out of 3000000
- 43825 multiletter control sequences out of 15000+200000
+ 40260 strings out of 427839
+ 781836 string characters out of 3152539
+ 1333080 words of memory out of 3000000
+ 43785 multiletter control sequences out of 15000+200000
  532197 words of font info for 60 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 73i,9n,76p,10439b,864s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,9n,76p,10439b,862s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on cv.pdf (2 pages).
