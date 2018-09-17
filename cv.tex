@@ -6,6 +6,7 @@
 % \usepackage[usenames, dvipsnames]{color}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{multicol}
 
 
 
@@ -24,24 +25,24 @@
 }
 
 \smartdiagramset{
-    bubble center node font = \footnotesize,
-    bubble node font = \footnotesize,
+    bubble center node font = \scriptsize,
+    bubble node font = \scriptsize,
     % specifies the minimum size of the bubble center node
-    bubble center node size = 0.1cm,
+    bubble center node size = 0.01cm,
     %  specifies the minimum size of the bubbles
-    bubble node size = 0.5cm,
+    bubble node size = 0.9cm,
     % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
+    distance center/other bubbles = 0.4cm,
     % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.5cm,
+    distance text center bubble = 0.3cm,
     % set center bubble color
     bubble center node color = pblue,
     % define the list of colors usable in the diagram
     set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
     % sets the opacity at which the bubbles are shown
-    bubble fill opacity = 0.6,
+    bubble fill opacity = 0.4,
     % sets the opacity at which the bubble text is shown
-    bubble text opacity = 0.6,
+    bubble text opacity = 0.8,
 }
 
 \addbibresource{bibliography.bib}
@@ -62,7 +63,7 @@
 
 \begin{aside}
 	%\hfill \break
-	\vspace{0.65 in}{~}	
+	\vspace{0.65 in}{~}
   \section{Telephone}
     (385) 312 2726
     ~
@@ -72,20 +73,27 @@
 %   \section{Address}
 %     815W 300S apt 1
 %     Provo, UT 84601
-  \section{Git}
-%     \href{http://www.carminebenedetto.net}{carminebenedetto.net}
-%     \href{https://bitbucket.org/neoben}{bitbucket.org/neoben}
-    \href{https://github.com/landonbw}{github.com/landonbw}
+%   \section{Git}
+% %     \href{http://www.carminebenedetto.net}{carminebenedetto.net}
+% %     \href{https://bitbucket.org/neoben}{bitbucket.org/neoben}
+%     \href{https://github.com/landonbw}{github.com/landonbw}
   \section{Personal Skills}
     % \includegraphics[width = 1.5in]{img/personalLandon.png}
 %     % \includegraphics[width = 1.5in]{img/personalLandonDark.png}
     \smartdiagram[bubble diagram]{
-        \textbf{Team}\\\textbf{Player},
-        \textbf{Initiative},
-        \textbf{Curiosity},
+        % \textbf{Team}\\\textbf{Player},
+        % \textbf{Initiative},
+        % \textbf{Curiosity},
+        % \textbf{Problem}\\\textbf{Solving},
+        % %\textbf{\vspace{2mm}Manage\vspace{2mm}},
+        % \textbf{Manage},
+        % \textbf{Organize}
+        \textbf{Public}\\\textbf{Speaking},
         \textbf{Problem}\\\textbf{Solving},
-        \textbf{\vspace{2mm}Manage\vspace{2mm}},
-        \textbf{Organize}
+        \textbf{Research},
+        \textbf{Automation},
+        \textbf{Leadership},
+        \textbf{Hard}\\\textbf{Work}
     }
 %     ~
     ~
@@ -103,10 +111,11 @@
       \textbf{Python},
       \textbf{C/C++},
       \textbf{Matlab},
-      \textbf{ANSYS},
       \textbf{C\#},
+      \textbf{ANSYS}\\\textbf{APDL},
+      \textbf{Julia},
       \textbf{JSL\vspace{-4mm}}
-      
+
       %\textbf{}
 }
     ~
@@ -115,26 +124,25 @@
     \textbf{Spanish}\includegraphics[scale=0.40]{img/3stars.png}
     ~
     \section{Certifications}
-    HAM Amateur Extra
+    Amateur Extra HAM
     GO PLM for NX
     ~
 \end{aside}
 
 \section{Education}
+\vspace{-3mm}
 \begin{entrylist}
     \entry
     {09/17 - 04/19}
     {Master of Science, Mechanical Engineering}
-    {BYU CAD Lab, Provo UT}
-    {Relevant Coursework: Statistical Methods for Research, Computer Aided Engineering Software Development}
+    {BYU, Provo UT}
+    {GPA: 3.85\\Relevant Coursework: Multi-Agent Systems, Statistical Methods for Research, Optimization Techniques, Systems Engineering and CAD Applications Computer Aided Engineering Software Development}
 
     \entry
     {01/12 - 04/17}
     {Bachelor of Science, Mechanical Engineering}
     {BYU, Provo UT}
-    {GPA: 3.55
-
-    Relevant Coursework: Flight Dynamics and Control, Kinematics, Mechanical Systems Design Applications, Engineering Measurements, Heat Transfer, Fluid Dynamics, Engineering Graphics}
+    {Relevant Coursework: Flight Dynamics and Control, Kinematics, Mechanical Systems Design Applications, Engineering Measurements, Heat Transfer, Fluid Dynamics, Engineering Graphics}
 
 
 
@@ -142,9 +150,10 @@
 
 
 
-\vspace{-2mm}
+\vspace{-4mm}
 
 \section{Skills and Abilities}
+\vspace{-3mm}
 \begin{entrylist}
 
     % \entry
@@ -172,20 +181,22 @@
     % \end{itemize}\vspace{1mm}}
 
 
-    \entry
-    {}
-    {Statistical Analysis}
-    {}
-    {\vspace{-4mm}
-    \begin{itemize}
-    \item (JMP) Co-presenter at the 2017 JMP Discovery Summit demostrating statistical analysis of flight simulator created in JSL
+    % \entry
+    % {}
+    % {Statistical Analysis}
+    % {}
+    % {\vspace{-4mm}
+    % \begin{itemize}
+    % \item (JMP) Determined which environmental factors have the largest impacts on webbing strength (Best new research ITRS 2017)
+    % \item (JMP) Co-presenter at the 2017 JMP Discovery Summit demostrating statistical analysis of flight simulator created in JSL (Best paper runner-up)
 
-    % \item (JMP) Analyzed statistical patterns in randomized experiments to determine factors that contribute to decreases in webbing breaking strength.
+    % % \item (JMP) Analyzed statistical patterns in randomized experiments to determine factors that contribute to decreases in webbing breaking strength.
 
-    \item (JMP) Analyzed environmental factors that effect webbing strength in Search and Rescue applications -  Awarded best new research ITRS 2017
+    % %\item (JMP) Analyzed environmental factors that effect webbing strength in Search and Rescue applications -  Awarded best new research ITRS 2017
 
-    % \item (Python/JMP) Predicted car values to within \$4000 through market tracking and analysis of over 100,000 car advertisements
-    \end{itemize}\vspace{1mm}}
+
+    % % \item (Python/JMP) Predicted car values to within \$4000 through market tracking and analysis of over 100,000 car advertisements
+    % \end{itemize}\vspace{1mm}}
 
     \entry
     {}
@@ -195,39 +206,41 @@
     \begin{itemize}
     \item Awarded best new research for work presented at the 2017 International Technical Rescue Symposium
     % \item Defined and oversaw progress towards achievement of technical and social constraints in development of products for tea packaging process in Peru
-    \item Presented actionable results of academic research to volunteers and industry professionals at the 2017 International Technical Rescue Symposium
+    % \item Presented actionable results of academic research to volunteers and industry professionals at the 2017 International Technical Rescue Symposium
+    \item Co-presenter at the 2017 JMP Discovery Summit demonstrating statistical analysis of flight simulation statistics in JSL (Best Paper runner-up)
     \end{itemize}\vspace{1mm}}
-
-
-    \entry
-    {}
-    {Control Systems}
-    {}
-    {\vspace{-4mm}
-    \begin{itemize}
-        \item (Python) Created flight simulator and aircraft control systems for Micro Air Vehicles including PID control, total energy control, and Kalman filters and path planning algorithms
-        \item (Python) Implemented PID, State Space, and Loop Shaping control methods for a two rotor "Whirlybird"
-    \end{itemize}
-    \vspace{1mm}}
-
-
-
-
-
-
 
 
     % \entry
     % {}
-    % {Leadership}
+    % {Control Systems}
     % {}
     % {\vspace{-4mm}
     % \begin{itemize}
-    % % \item Coordinated up to 10 students in verification testing of innovative multi-user CAD software
-    % \item Directed a team of 8 students in the modeling of a UAV to demonstrate benefits of multi-user CAD tools in aerospace applications
-    % \item Prepared and presented project updates to multinational aerospace corporations to secure future funding for research activities
+    %     \item (Python) Created flight simulator and aircraft control systems for Micro Air Vehicles including PID control, total energy control, and Kalman filters and path planning algorithms
+    %     \item (Python) Implemented PID, State Space, and Loop Shaping control methods for a two rotor "Whirlybird"
+    % \end{itemize}
+    % \vspace{1mm}}
+
+
+
+
+
+
+
+
+    \entry
+    {}
+    {Leadership}
+    {}
+    {\vspace{-4mm}
+    \begin{itemize}
+    % \item Coordinated up to 10 students in verification testing of innovative multi-user CAD software
+    % \item Team
+    \item Managed a team of 4 students with \$50,000 budget to investigate CAD automation methods leading to a publication in CAD and Applications Journal
+    \item Prepared and presented project updates to multinational aerospace and automotive corporations to secure future funding for research activities
     % \item Led group of 12 students in modeling of wing structure for original Wright Flyer
-    % \end{itemize}\vspace{1mm}}
+    \end{itemize}\vspace{1mm}}
 
 
 
@@ -245,6 +258,17 @@
     % \item Awarded Best New Research at International Technical Rescue Symposium 2017
     % % \item Used JMP statistical package to analyze statistical effect of environmental factors on webbing strength
     % \end{itemize}\vspace{1mm}}
+
+    \entry
+    {}
+    {Product Development}
+    {}
+    {\vspace{-4mm}
+    \begin{itemize}
+        \item Recognized by Associate Administrator of National Nuclear Security Administration for excellence in design of nuclear ordinance tooling
+        \item Designed and constructed an adhesive free paper sealing device used to reduce tea bag packaging time by 85\%
+    \end{itemize}
+    \vspace{1mm}}
 
 
     % \entry
@@ -284,11 +308,28 @@
 \end{entrylist}
 
 
-\vspace{-2mm}
+\vspace{-4mm}
+
+
+
+
+
+
 
 
 \section{Experience}
+\vspace{-3mm}
 \begin{entrylist}
+  \entry
+    {05/18 - 08/18}
+    {Systems Engineer Intern}
+    {Honeywell, Phoenix, UT}
+    {\vspace{-4mm}
+    \begin{itemize}
+        \item Reduced circuit analysis time from three days to three hours with a 98\% reduction in rework time through programmatic automation
+        \item Elemenated redundant test methods by evaluating and comparing competing requirements of RTCA DO-160, MIL-STD-810, and MIL-STD-461.
+        \item Prepared and presented critical design review slides to customer
+    \end{itemize}\vspace{1mm}}
   \entry
     {02/14 - Now}
     {Research Assistant}
@@ -311,15 +352,15 @@
 %     {Tester Lead}
 %     {BYU Cad Lab, Provo, UT}
 %     {Organized testing team in performace validation of revolutionary multi-user CAD package (NX-based)\\}
-  \entry
-    {04/16 - 09/16}
-    {Research Assistant}
-    {Compliant Mechanisms Research Laboratory, Provo, UT}
-    {\vspace{-4mm}
-    \begin{itemize}
-        \item Implemented technology push product design methods to discover novel applications of origami inspired compliant mechanisms
-        \item Created a process to manufacture textiles with shape memory
-    \end{itemize}\vspace{1mm}}
+%   \entry
+%     {04/16 - 09/16}
+%     {Research Assistant}
+%     {Compliant Mechanisms Research Laboratory, Provo, UT}
+%     {\vspace{-4mm}
+%     \begin{itemize}
+%         \item Implemented technology push product design methods to discover novel applications of origami inspired compliant mechanisms
+%         \item Created a process to manufacture textiles with shape memory
+%     \end{itemize}\vspace{1mm}}
     % {Investigated possible techniques to apply origami inspired compliant mechanisms to manufacturing processes\\}
 
   \entry
@@ -329,10 +370,10 @@
     {\vspace{-4mm}
     \begin{itemize}
         % \item Analyzed function and purpose of pyrophyllite in synthetic diamond production in order to propose materials with an annual cost saving of \$100,000
-        %\item Generated a cost savings of \$100,000 annually by recommending alternatives to pyrophyllite in poly-crystalline diamond production
+        \item Generated a cost savings of \$100,000 annually by evaluating alternatives to pyrophyllite in poly-crystalline diamond production
         \item Developed qualification tests for the evaluation of pyrophyllite substitutes
         \item Investigated methods of non-destructive crack detection in poly-crystalline diamond to eliminate time intensive manual inspection
-    \end{itemize}\vspace{1mm}}
+     \end{itemize}\vspace{1mm}}
     % {Improved manufacturing and inspection techniques for polycrystalline diamond cutting tools used in the aerospace and automotive industries}
     % \entry
     % {Ongoing}
@@ -347,5 +388,16 @@
     % \end{itemize}\vspace{1mm}}
 \end{entrylist}
 
-
+% \section{Awards}
+% \vspace{-5mm}
+% \begin{multicols}{2}
+%     \begin{itemize}
+%         \item Capstone project recognized as outstanding design by the National Nuclear Security Administration
+%         \item Best new research ITRS 2017
+%     \columnbreak
+%         \item thing 2
+%     \end{itemize}
+% \end{multicols}
+% ~
+~
 \end{document}
