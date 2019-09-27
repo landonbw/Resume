@@ -1,0 +1,3 @@
+pdftk full-pdf.pdf cat 12-15 output outfile_p12-15.pdf
+
+xdg-open file
